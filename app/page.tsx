@@ -169,9 +169,12 @@ function NavBar() {
             </span>
           ))}
         </div>
-        <button className="bg-white text-black text-sm font-medium px-5 py-2 rounded-full hover:bg-white/90 transition-colors duration-200">
-          {"Let's talk"}
-        </button>
+        <button
+  onClick={() => window.open('https://wa.me/923182622266', '_blank')}
+  className="bg-white text-black text-sm font-medium px-5 py-2 rounded-full hover:bg-white/90 transition-colors duration-200"
+>
+  {"Let's talk"}
+</button>
       </div>
     </motion.nav>
   )
@@ -264,12 +267,28 @@ function HeroSection() {
             >
               View Github
             </Link>
-            <button className="text-sm text-white/40 hover:text-white/70 transition-colors flex items-center gap-2">
-              Download CV
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
-                <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </button>
+<a 
+  href="/zain-cv.pdf"
+  download="Zain_Ur_Rehman_CV.pdf"
+  className="text-sm text-white/40 hover:text-white/70 cursor-pointer transition-colors inline-flex items-center gap-2"
+>
+  Download CV
+  {/* Sahi Download Icon SVG */}
+  <svg 
+    width="14" 
+    height="14" 
+    viewBox="0 0 24 24" 
+    fill="none" 
+    stroke="currentColor" 
+    strokeWidth="2" 
+    strokeLinecap="round" 
+    strokeLinejoin="round"
+  >
+    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+    <polyline points="7 10 12 15 17 10" />
+    <line x1="12" y1="15" x2="12" y2="3" />
+  </svg>
+</a>
           </motion.div>
         </div>
 
@@ -282,9 +301,9 @@ function HeroSection() {
           <div className="border border-white/8 rounded-2xl p-6 bg-white/[0.02]">
             <div className="flex items-center gap-4 mb-8">
               <div className="relative">
-                <div className="w-16 h-16 rounded-full bg-[#1a1a2e] border-2 border-[#EEEDFE]/20 flex items-center justify-center">
+                <div className="w-16 h-16 flex items-center justify-center">
                   {/* Fixed: ZR initials for Zain Ur Rehman */}
-                  <span className="font-display font-bold text-xl text-[#AFA9EC]">ZR</span>
+                  <img src="/Gemini_Generated_Image_a9jzyoa9jzyoa9jz.png" alt="Personal-profile-photo" className="font-display font-bold text-xl text-[#AFA9EC]"></img>
                 </div>
                 <span className="absolute bottom-0.5 right-0.5 w-3.5 h-3.5 rounded-full bg-[#1D9E75] border-2 border-[#0d0d0d]" />
               </div>
