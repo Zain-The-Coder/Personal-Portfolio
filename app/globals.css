@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  --font-display: 'Poppins', sans-serif;
+  --font-body: 'Poppins', sans-serif; 
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: #080808;
+  color: #e8e8e0;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: #7F77DD;
+  color: #fff;
+}
+
+.font-display { font-family: var(--font-display); }
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 99px; }
