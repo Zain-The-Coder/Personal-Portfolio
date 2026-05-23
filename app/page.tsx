@@ -139,7 +139,7 @@ const itemVariants = {
       damping: 15,
     },
   },
-}
+}as const
 
 function NavBar() {
   const [scrolled, setScrolled] = useState(false)
